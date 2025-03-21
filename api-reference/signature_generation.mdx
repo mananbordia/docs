@@ -1,0 +1,26 @@
+---
+title: 'Signature Generation'
+description: 'Quick walkthrough the need for signatures in payload headers and how to generate them'
+---
+
+## Why Signatures Matter
+
+Digital signatures ensure authentication, data integrity, and security in blockchain transactions. They verify the sender’s identity, prevent data tampering, and provide non-repudiation, ensuring accountability.
+
+## How to Generate a Signature
+
+* <b>Private Key Usage:</b> A unique private key is used (in beliquid's context, it is the private key of the `sessionKey` which is passed during authentication) to create a signature.
+* <b>EIP-712 Standard:</b> Signatures follow the EIP-712 standard for structured data.
+* <b>Message Formatting:</b> Data is structured into a typed format, ensuring consistency and readability.
+* <b>Hash Computation:</b> The structured data is converted into a unique hash.
+* <b>Signature Creation:</b> The private key signs the hash, generating a verifiable signature.
+* <b>Verification:</b> The recipient can use the signer’s public address to confirm authenticity.
+
+## Key Benefits
+
+* <b>Security:</b> Protects against unauthorized changes.
+* <b>Efficiency:</b> Enables fast and reliable verification.
+* <b>Compliance:</b> Uses industry standards for interoperability.
+
+To generate your own signatures, refer to the [EIP-712 specification](https://eips.ethereum.org/EIPS/eip-712) for implementation details and best practices. By following this structured approach, applications ensure trust and transparency in digital interactions.
+

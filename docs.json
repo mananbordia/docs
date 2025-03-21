@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Beliquid Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#f5bc39",
+    "light": "#f5bc39",
+    "dark": "#f5bc39"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -16,40 +16,49 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
+              "about_beliquid",
               "quickstart",
-              "development"
+              "beliquid_l2"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Trading",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "trading/spot_assets",
+              "trading/fees",
+              "trading/order_book"
+            ]
+          },
+          {
+            "group": "Vaults",
+            "pages": [
+              "vault/liquidity"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API",
         "groups": [
           {
             "group": "API Documentation",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/introduction",
+              "api-reference/signature_generation"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Trading Endpoints",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoint/auth",
+              "api-reference/endpoint/create_order",
+              "api-reference/endpoint/cancel_order",
+              "api-reference/endpoint/get_all_orders",
+              "api-reference/endpoint/get_all_fills",
+              "api-reference/endpoint/get_user_balances",
+              "api-reference/endpoint/get_active_markets",
+              "api-reference/endpoint/get_spot_product_ids",
+              "api-reference/endpoint/get_nonce"
             ]
           }
         ]
@@ -58,18 +67,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://t.me/+oYIjg0IjYgc2MGU1",
+          "icon": "telegram"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://medium.com/@beratrade",
           "icon": "newspaper"
         }
       ]
@@ -79,24 +83,27 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "description": "Beliquid",
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://t.me/+oYIjg0IjYgc2MGU1"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Beliquid DApp",
+      "href": "https://beratrade-trading-one.vercel.app/trading/BERA"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/Beliquid_pro",
+      "telegram": "https://t.me/+oYIjg0IjYgc2MGU1"
     }
+  },
+  "appearance": {
+    "default": "dark"
   }
 }
