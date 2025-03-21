@@ -94,7 +94,7 @@
     "primary": {
       "type": "button",
       "label": "Beliquid DApp",
-      "href": "https://beratrade-trading-one.vercel.app/trading/BERA"
+      "href": "https://testnet.beliquid.pro/trading/BERA"
     }
   },
   "footer": {
