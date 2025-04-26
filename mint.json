@@ -1,0 +1,90 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Beliquid Docs",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#f5bc39",
+    "light": "#f5bc39",
+    "dark": "#f5bc39",
+    "anchors": {
+      "from": "#f5bc39",
+      "to": "#f5bc39"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://t.me/+oYIjg0IjYgc2MGU1"
+    }
+  ],
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["about_beliquid", "quickstart", "beliquid_l2"]
+    },
+    {
+      "group": "Trading",
+      "pages": [
+        "trading/spot_assets",
+        "trading/fees",
+        "trading/order_book"
+      ]
+    },
+    {
+      "group": "Vaults",
+      "pages": ["vault/liquidity"]
+    },
+    {
+      "group": "Technical Overview",
+      "pages": ["contract-addresses"]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/signature_generation",
+        {
+          "group": "Authentication",
+          "pages": ["api-reference/endpoint/auth"]
+        },
+        {
+          "group": "Order Management",
+          "pages": [
+            "api-reference/endpoint/create_order",
+            "api-reference/endpoint/cancel_order",
+            "api-reference/endpoint/get_all_orders",
+            "api-reference/endpoint/get_all_fills"
+          ]
+        },
+        {
+          "group": "User Data",
+          "pages": [
+            "api-reference/endpoint/get_user_balances",
+            "api-reference/endpoint/get_nonce"
+          ]
+        },
+        {
+          "group": "Market Data",
+          "pages": [
+            "api-reference/endpoint/get_active_markets",
+            "api-reference/endpoint/get_spot_product_ids"
+          ]
+        }
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/Beliquid_pro",
+    "telegram": "https://t.me/+oYIjg0IjYgc2MGU1"
+  }
+}
